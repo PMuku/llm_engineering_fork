@@ -12,7 +12,7 @@ from langchain_core.messages import SystemMessage, HumanMessage, convert_to_mess
 from langchain_core.documents import Document
 
 
-DB_NAME = "vector_db"
+DB_NAME = str(Path(__file__).parent.parent / "vector_db")
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 LLM_MODEL = "gemma4"
 
